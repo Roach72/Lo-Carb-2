@@ -54,18 +54,12 @@
                 <h3 style="color: rgb(255, 119, 0) !important;"> <span>للطلبات من المطعـم  </span></h3>
                 {% endif %}
             </div>
-            {% for lo in addlocarbs %}
-            <a href="{{ lo.href }}" class="alogo d-flex justify-content-evenly " data-aos="fade-right" style="margin-bottom: 40px;">
+            <a href="https://order.locarbkw.com/" class=" alogo d-flex justify-content-evenly " data-aos="fade-right" style="margin-bottom: 40px;">
                 <div class=" link d-flex justify-content-evenly">
-                    <img class="img" src="{{ lo.image.url }}" loading="lazy">
-                    {% if LANGUAGE_CODE == 'en' %}
-                    <h3 class="logo"><span>{{ lo.title_en }}</span></h3>
-                    {% else %}
-                    <h3 class="logo"><span>{{ lo.title }}</span></h3>
-                    {% endif %}
+                    <img class="img" src="{% static 'images/lor.png' %}" loading="lazy">
+                    <h2 class="logo"><span>Locarb</span></h2>
                 </div>
             </a>
-            {% endfor %}
             <div class="a" style="margin-bottom: 40px;">
                 {% if LANGUAGE_CODE == 'en' %}
                 <h3 style="color: rgb(255, 119, 0) !important;"><span>Subscribe through the application </span></h3>

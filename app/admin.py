@@ -8,4 +8,4 @@ admin.site.register(lociation)
 admin.site.register(app)
 admin.site.register(description)
 admin.site.register(description2)
-admin.site.register(addlocarb)
+
